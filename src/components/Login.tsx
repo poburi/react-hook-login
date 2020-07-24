@@ -28,6 +28,7 @@ export const Login: React.FC = () => {
   const handleFormSubmit = (event: React.FocusEvent<HTMLFormElement>) => {
     event.preventDefault();
     setData({ ...data, isSubmitting: true, errorMessage: null });
+    fetch("");
   };
 
   return (
